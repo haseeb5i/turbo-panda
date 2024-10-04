@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+import { GeistSans } from "geist/font/sans";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-});
+import { Toaster } from "@repo/ui";
+
+import { Providers } from "./providers";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,8 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={geistSans.variable}>{children}</body>
+    <html lang="en" className={GeistSans.variable} suppressHydrationWarning>
+      <body>
+        <Providers>{children}</Providers>
+        <Toaster />
+      </body>
     </html>
   );
 }

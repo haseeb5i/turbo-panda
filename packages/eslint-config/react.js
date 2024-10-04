@@ -12,18 +12,13 @@ const project = resolve(process.cwd(), "tsconfig.json");
 module.exports = {
   extends: ["eslint:recommended", "prettier", "turbo"],
   plugins: ["only-warn"],
-  globals: {
-    React: true,
-    JSX: true,
-  },
+  globals: { React: true, JSX: true },
   env: {
     browser: true,
   },
   settings: {
     "import/resolver": {
-      typescript: {
-        project,
-      },
+      typescript: { project },
     },
   },
   ignorePatterns: [
