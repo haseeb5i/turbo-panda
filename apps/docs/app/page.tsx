@@ -11,7 +11,6 @@ import {
   RadioGroupDemo,
   SeparatorDemo,
   Slider,
-  Switch,
   TabsDemo,
   TooltipDemo,
   DropdownMenuDemo,
@@ -37,6 +36,8 @@ import {
   ToastDemo,
   Heading,
 } from "@repo/ui";
+// TODO: figure out if this import style is better
+import { Switch } from "@repo/ui/switch";
 import { ThemeToggle } from "./theme-toggle";
 
 export default function Home() {
