@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@pandacss/dev": "^0.46.1",
-    "@repo/eslint-config": "*",
-    "@repo/tsconfig": "*",
+    "@repo/config-eslint": "*",
+    "@repo/config-typescript": "*",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
